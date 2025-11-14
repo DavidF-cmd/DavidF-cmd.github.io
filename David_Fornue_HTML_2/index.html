@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">   
+    <head>
+        <meta charset="UTF-8"> 
+        <title>Repairman Job Application</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; }
+            header, footer { background-color: beige; padding: 10px; }
+            nav a { margin: 0 10px; }
+            section { margin-top: 20px; }
+            .form-section { background-color: blanchedalmond; padding: 15px; border: 1px solid #ccc; }
+        </style>
+    </head>
+    <body>
+
+    <header>
+        <h1>Randalf's Chop and Repair Shop</h1>
+        <nav>
+            <a href="#application">Application Form></a>
+            <a href="#Quote">Quote></a>
+            <a href="#promo">Promotional Material</a>
+        </nav>
+
+    </header>
+
+    <main>
+        <h2>Application Form</h2>
+        <section id="application" class="form section">
+            <article>
+                <!--application form starts here-->
+                <h2>Work Form (to fill out)</h2>
+                <form action="/submit" method="POST" autocomplete="on">
+                    <label>Legal Name:
+                        <input type="text" name="legalname" placeholder="John Doe" required minlength="4" maxlength="50">
+                    </label><br><br>
+
+                    <label>Email:
+                        <input type="text" name="Email" placeholder="myemail@google.com" required pattern="email@carrier.com">
+                    </label><br><br>
+
+
+                    <label>Password:
+                        <input type="password" name="password" required>
+                    </label><br><br>
+
+
+                    <label>Work Experience:
+                        <input type="number" name="experience" min="0" max="10">
+                    </label><br><br>
+
+
+                    <label> Expected Salary?
+                        <input type="range" name="salary" min="1000" max="5000" step="10">
+                    </label><br><br>
+
+                    <label>Job Skills</label><br><br>
+                        <input type="checkbox" name="skill" value="repair">Car repair<br>
+                        <input type="checkbox" name="skill" value="maintenance">Car maintenance<br>
+                        <input type="checkbox" name="skill" value="diagnosis">Damage diagnosisr<br>
+                        <input type="checkbox" name="skill" value="parts">Part replacement<br>
+                        <input type="checkbox" name="skill" value="service">Customer service<br>
+                    <br><br>
+                    
+                    <label>Job Availability</label><br><br>
+                      <input type="radio" name="availability" value="part time">Part Time worker<br>
+                      <input type="radio" name="availability" value="part time student">Part Time worker (student)<br>
+                      <input type="radio" name="availability" value="part full time">Full Time worker<br>
+                      <input type="radio" name="availability" value="apprenticeship">Apprencticeship<br>
+                    <br><br>
+
+                    <label>Position:
+                        <select>
+                            <option value="analyst">Digital Analyst</option>
+                            <option value="mechanic">Mechanic/Repairman</option>
+                            <option value="procurer">Procurer of Tools and Spare Parts</option>
+                            <option value="manager">Managert</option>
+                            <option value="clerk">Front Desk Clerk</option>
+                        </select>
+                    </label><br><br>
+                    
+                    <label>City or Locale of interest
+                        <input list="cities" name="city">
+                        <datalist id=cities>
+                            <option value="Espoo">
+                            <option value="Exilia">
+                            <option value="Nafure">
+                            <option value="Manchester">
+                        </datalist>
+                    </label><br><br>
+
+                    <label for="coverletter">Cover Letter:
+                        <textarea id="coverletter" name="userMessage" rows="5" cols="30" placeholder="I am interested in the work because..."></textarea><br>
+                    </label><br><br>
+
+
+                    <label>Referral note:
+                        <input type="text" value="reference" disabled>
+                    </label><br><br>
+
+
+                    <label>Application number:
+                        <input type="text" value="No ()" readonly>
+                    </label><br><br>
+
+                    <input type="submit" value="Send" aria-label="Submit Job Application">
+
+                </form>
+                <!--end of the application form-->
+            </article>
+        </section>
+        <br>
+
+
+        <aside>
+            Do you know what kind of tires are best for your car?<br><br> 
+            <img src="https://carexamer.com/blog/wp-content/uploads/2020/07/IMG-20200720-WA0000-2-e1712087897107-800x445.jpg"
+            alt="Different types of tires"><br>
+            Come on down and get a free consult!
+        </aside>
+
+        <h2>Some of our Work</h2>
+        <section id="promo">
+            <article>
+                <!--stock images of repairshops-->
+                <figure>
+                    <img src="https://www.allstoragesystems.com.au/wp-content/uploads/2021/06/Organising-your-Automotive-Workshop.jpg"
+                    alt="Car raised up for inspection">
+                    <figcaption>Our Work at Randalf's</figcaption>
+                </figure>
+
+                <!--embedded pdf document on cars-->
+                <embed src="https://catalogimages.wiley.com/images/db/pdf/9780470377277.excerpt.pdf" type="application/pdf" width="600" height="400">
+            </article>
+        </section>
+
+    </main>
+
+    <blockquote>
+       <strong>“You can't build a reputation on what you are going to do.” </strong><br> 
+        <strong>- Henry Ford</strong>
+    </blockquote>
+
+    <footer>
+        <p>We welcome all applicants, regardless of your skills in the work place! Always eager to train new hands if the attitude is right!</p>
+    </footer>
+
+
+
+    </body>
+    </html>
